@@ -2,6 +2,8 @@ version: '3'
 services:
     kavita:
         image: kizaing/kavita:latest
+        labels:
+            shipyard.route: '/'
         container_name: kavita
         volumes:
             - ./manga:/manga
